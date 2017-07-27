@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Runnify</title>
+    <meta name="description" content="Runnify">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="/css/build.css" />
+    <link rel="stylesheet" href="/css/fa.min.css" />
+  </head>
+  <body>
+    <div id="react-root"></div>
+    <script src="/bin/app.js"></script>
+    <script>
+      window.fbAsyncInit = function(){FB.init({ appId: '1817176411839204', version: 'v2.9'}); FB.AppEvents.logPageView();};
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaadIsjvKKDt7mdjXgoLMRFiy_JX1a_Cs&libraries=places" async defer></script>
+  </body>
+</html>

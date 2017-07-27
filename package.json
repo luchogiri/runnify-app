@@ -1,0 +1,55 @@
+{
+  "name": "runnify",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "watch": "webpack -d --watch",
+    "build": "env NODE_ENV=production webpack -p",
+    "server": "env DEBUG=app:'*' babel-node $NODE_DEBUG_OPTION index.server"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "debug": "2.2.0",
+    "express": "^4.14.0",
+    "moment": "2.14.1",
+    "mongoose": "^4.5.8",
+    "morgan": "^1.7.0",
+    "node-fetch": "^1.6.1",
+    "pug": "^2.0.0-beta3",
+    "serve-favicon": "^2.3.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.10.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react-native": "1.9.0",
+    "babel-regenerator-runtime": "^6.5.0",
+    "es6-promise": "^3.2.1",
+    "glamor": "^2.20.25",
+    "moment": "^2.14.1",
+    "react": "15.3.2",
+    "react-datepicker": "^0.30.0",
+    "react-dom": "15.3.2",
+    "react-native": "^0.37.0",
+    "react-native-datepicker": "^1.4.7",
+    "react-native-fbsdk": "^0.4.0",
+    "react-native-google-places-autocomplete": "^1.2.12",
+    "react-native-onesignal": "^3.0.4",
+    "react-native-swipe-list-view": "^0.3.1",
+    "react-native-swiper": "^1.5.4",
+    "react-redux": "^4.4.5",
+    "react-router": "^2.5.2",
+    "redux": "^3.5.2",
+    "redux-logger": "^2.6.1",
+    "redux-persist": "^4.1.0",
+    "redux-thunk": "^2.1.0",
+    "webpack": "^1.13.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "rnpm": {
+    "assets": [
+      "assets/fonts"
+    ]
+  }
+}
